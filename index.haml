@@ -66,26 +66,64 @@
                 %p.desc 趣味 : 寝ること
                 %p.desc 身長 : 160cm
                 %p.desc 一言 : 頑張ってたくさん寝ます!
+    %hr
     %setion#outline.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 企画情報
-            %h2 開催日時
-            %p ミスター美少女コンテスト 10月8日(土) 13:00～14:00
-            %p ミス東工大コンテスト 10月9日(日) 12:00～13:00
-            %p グランプリ発表 10月9日(日) 16:00～16:50
-
-            %h2 開催場所
-            %p グランプリ発表 10月9日(日) 16:00～16:50
-
-            %h2 投票方法
-            %p グランプリ発表 10月9日(日) 16:00～16:50
-
-            %h2 注意事項
-            %p グランプリ発表 10月9日(日) 16:00～16:50
+      .container
+        .row
+          .col-md-4.col-sm-6.col-lg-3.card.card
+            %h2
+              %i.icon.fa.fa-calendar
+              開催日時
+            %h3 ミスター美少女コンテスト
+            %p 10月8日(土) 13:00～14:00
+            %h3 ミス東工大コンテスト
+            %p 10月9日(日) 12:00～13:00
+            %h3 グランプリ発表
+            %p 10月9日(日) 16:00～16:50
+          .col-md-4.col-sm-6.col-lg-3.card
+            %h2
+              %i.icon.fa.fa-map-marker
+              開催場所
+            %p 東京工業大学大岡山キャンパス
+            %p 野外ステージ
+            .ggmap
+              %iframe{allowfullscreen: "", frameborder: "0", height: "450", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.0511188122463!2d139.68272340233486!3d35.605030481882956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f88b899cc553%3A0x5d0763367373fca5!2sTokyo+Institute+of+Technology!5e0!3m2!1sen!2sjp!4v1490632627487", style: "border:0", width: "600"}
+          .clearfix.visible-sm-block
+          .col-md-4.col-sm-6.col-lg-3.card
+            %h2
+              %i.icon.fa.fa-thumbs-up
+              投票方法
+            %h3 ミスター美少女コンテスト
+            %p こちらより投票が可能です
+            %h3 ミス東工大コンテスト
+            %p こちらより投票が可能です
+          .clearfix.visible-md-block
+          .col-md-4.col-sm-6.col-lg-3.card
+            %h2
+              %i.icon.fa.fa-exclamation-triangle
+              注意事項
+            %ul
+              %li 雨天時は体育館で行います
+              %li 東京工業大学に在籍する学生のみエントリー可能です
+    %hr
     %setion#schedule.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 スケジュール
+    %hr
+    %setion#schedule.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 Q&A
+    %hr
+    %setion#schedule.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 エントリーフォーム

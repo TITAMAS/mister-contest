@@ -3,7 +3,6 @@ var haml = require('gulp-haml');
 var sass = require('gulp-sass');
 var browserSync =require('browser-sync');
 
-// Get one .haml file and render
 gulp.task('haml', function() {
 	gulp.src('./index.haml')
 		.pipe(haml())

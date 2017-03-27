@@ -21,14 +21,13 @@
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{href: "#"} Action
+              %a{href: "#"} 前年度の結果
             %li
-              %a{href: "#"} Another action
+              %a{href: "#"} 企画情報
             %li
-              %a{href: "#"} Something else here
-            %li.divider{role: "separator"}
+              %a{href: "#"} スケジュール
             %li
-              %a{href: "#"} Separated link
+              %a{href: "#"} Q&A
     %section#intro
       %img.headerImage{src: "./assets/images/header.jpeg"}
     %setion#results.text-center
@@ -115,15 +114,61 @@
         .row
           .col-lg-8.col-lg-offset-2
             %h1 スケジュール
+        .row
+              %ul.list-group
+                %li.list-group-item.clearfix
+                  .schedule-item-date
+                    %h3.start 7月1日〜
+                    %h3.end 9月11日
+                  .schedule-item-content
+                    %h2 エントリー期間
+              %i.icon.fa.fa-caret-down
+              %ul.list-group
+                %li.list-group-item.clearfix
+                  .schedule-item-date
+                    %h3.start 7月1日〜
+                    %h3.end 9月11日
+                  .schedule-item-content
+                    %h2 審査期間
+              %i.icon.fa.fa-caret-down
+              %ul.list-group
+                %li.list-group-item.clearfix
+                  .schedule-item-date
+                    %h3.start 7月1日〜
+                    %h3.end 9月11日
+                  .schedule-item-content
+                    %h2 学内投票
+              %i.icon.fa.fa-caret-down
+              %ul.list-group
+                %li.list-group-item.clearfix
+                  .schedule-item-date
+                    %h3.start 7月1日〜
+                    %h3.end 9月11日
+                  .schedule-item-content
+                    %h2 グランプリ決定
     %hr
-    %setion#schedule.text-center
+    %setion#qna.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 Q&A
+            .question
+              %h3 Q. 未経験でも参加可能ですか？
+              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+            .question
+              %h3 Q. 未経験でも参加可能ですか？
+              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+            .question
+              %h3 Q. 未経験でも参加可能ですか？
+              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+            .question
+              %h3 Q. 未経験でも参加可能ですか？
+              %h3.answer A. はい、参加可能です。すべて私達がサポートします
     %hr
     %setion#schedule.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 エントリーフォーム
+        .row
+          %iframe{frameborder: "0", height: "1000", marginheight: "0", marginwidth: "0", src: "https://docs.google.com/forms/d/e/1FAIpQLSetJ8sikuBHAg0CVSuBkefhVUm1pDK0An3uoyF5bip8s6NCCA/viewform?embedded=true", width: "760"} 読み込んでいます...

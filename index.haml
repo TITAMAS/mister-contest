@@ -5,6 +5,74 @@
     %script{type: "text/javascript", src: "./assets/js/jquery-3.2.0.min.js"}
     %script{type: "text/javascript", src: "./assets/js/bootstrap.min.js"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/bootstrap.min.css"}
+    %link{rel: "stylesheet", type: "text/css", href: "./assets/css/font.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/main.css"}
+    %link{rel: "stylesheet", type: "text/css", href: "./assets/font-awesome/css/font-awesome.min.css"}
   %body
-    %p hello world!
+    %nav.navbar.navbar-default
+      .container-fluid.navbar-position
+        .navbar-header
+          %button.navbar-toggle.collapsed{aria-expanded: "false", data-target: "#bs-example-navbar-collapse-1", data-toggle: "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "#"} 東工大ミスコンテスト
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{href: "#"} Action
+            %li
+              %a{href: "#"} Another action
+            %li
+              %a{href: "#"} Something else here
+            %li.divider{role: "separator"}
+            %li
+              %a{href: "#"} Separated link
+    %section#intro
+      %img.headerImage{src: "./assets/images/header.jpeg"}
+    %setion#results.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h2 前年度の結果
+      .container
+        .row
+          .col-sm-4
+            .thumbnail
+              %img{src: "./assets/images/miss1.jpg"}
+              .caption
+                %i.winner.fa.fa-trophy{aria-hidden: "true"}
+                %span.name 劉穎青
+                %p.desc 誕生日 : 1995/03/11
+                %p.desc 趣味 : 寝ること
+                %p.desc 身長 : 160cm
+                %p.desc 一言 : 頑張ってたくさん寝ます!
+          .col-sm-4
+            .thumbnail
+              %img{src: "./assets/images/miss2.jpg"}
+              .caption
+                %span.name 嶋本恭子
+                %p.desc 誕生日 : 1997/10/14
+                %p.desc 趣味 : 寝ること
+                %p.desc 身長 : 160cm
+                %p.desc 一言 : 頑張ってたくさん寝ます!
+          .col-sm-4
+            .thumbnail
+              %img{src: "./assets/images/miss3.jpg"}
+              .caption
+                %span.name 木村麻理子
+                %p.desc 誕生日 : 1995/03/11
+                %p.desc 趣味 : 寝ること
+                %p.desc 身長 : 160cm
+                %p.desc 一言 : 頑張ってたくさん寝ます!
+    %setion#outline.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h2 開催概要
+    %setion#schedule.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h2 スケジュール

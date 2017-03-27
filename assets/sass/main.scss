@@ -1,0 +1,47 @@
+$main_color: #f8cff8;
+
+body {
+	font-family: 'migmix-1p'
+}
+
+// Navbar
+
+.navbar {
+	background-color: $main_color;
+	margin-bottom: 0;
+
+	.navbar-position {
+		position: relative;
+		margin: 0 auto;
+	}
+}
+
+#intro {
+	.headerImage {
+		width: 100%;
+	}
+}
+
+#results {
+	.winner {
+		font-size: 30px;
+		margin-right: 5px;
+		color: goldenrod;
+	}
+
+	.name {
+		font-size: 30px;
+	}
+
+	.desc {
+		margin-bottom: 0;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+h2 {
+	margin: 50px 0 50px 0;
+}

@@ -21,13 +21,13 @@
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{href: "#"} 前年度の結果
+              %a{href: "#results"} 前年度の結果
             %li
-              %a{href: "#"} 企画情報
+              %a{href: "#outline"} 企画情報
             %li
-              %a{href: "#"} スケジュール
+              %a{href: "#schedule"} スケジュール
             %li
-              %a{href: "#"} Q&A
+              %a{href: "#qna"} Q&A
     %section#intro
       %img.headerImage{src: "./assets/images/header.jpeg"}
     %setion#results.text-center
@@ -165,10 +165,11 @@
               %h3 Q. 未経験でも参加可能ですか？
               %h3.answer A. はい、参加可能です。すべて私達がサポートします
     %hr
-    %setion#schedule.text-center
+    %setion#entry.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 エントリーフォーム
         .row
-          %iframe{frameborder: "0", height: "1000", marginheight: "0", marginwidth: "0", src: "https://docs.google.com/forms/d/e/1FAIpQLSetJ8sikuBHAg0CVSuBkefhVUm1pDK0An3uoyF5bip8s6NCCA/viewform?embedded=true", width: "760"} 読み込んでいます...
+          .ggform
+            %iframe{frameborder: "0", height: "1000", marginheight: "0", marginwidth: "0", src: "https://docs.google.com/forms/d/e/1FAIpQLSetJ8sikuBHAg0CVSuBkefhVUm1pDK0An3uoyF5bip8s6NCCA/viewform?embedded=true", width: "760"} 読み込んでいます...

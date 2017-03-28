@@ -1,10 +1,12 @@
 !!!
 %html
   %head{lang: "ja"}
+    %title ミス東工大コンテスト2017
     %meta{charset: "utf-8"}
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}
     %script{type: "text/javascript", src: "./assets/js/jquery-3.2.0.min.js"}
     %script{type: "text/javascript", src: "./assets/js/bootstrap.min.js"}
+    %script{type: "text/javascript", src: "./assets/js/scroll.js"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/bootstrap.min.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/font.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/main.css"}
@@ -19,7 +21,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: "#"} TokyoTech Miss Contest
+          %a.navbar-brand{href: "#intro"} TokyoTech Miss Contest 2017
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
@@ -27,7 +29,7 @@
             %li
               %a{href: "#outline"} 企画情報
             %li
-              %a{href: "#results"} 昨年度出場者
+              %a{href: "#results"} 歴代ミス東工大
             %li
               %a{href: "#schedule"} スケジュール
             %li
@@ -100,7 +102,7 @@
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            %h1 昨年度出場者
+            %h1 歴代ミス東工大
       .container
         .row
           .col-sm-6.col-md-4
@@ -109,6 +111,7 @@
               .caption
                 %i.winner.fa.fa-trophy{aria-hidden: "true"}
                 %span.name 劉穎青
+                %p 2016年 ミス東工大
                 %p.desc 誕生日 : 1995/03/11
                 %p.desc 趣味 : 寝ること
                 %p.desc 身長 : 160cm
@@ -117,10 +120,12 @@
             .thumbnail
               %img{src: "./assets/images/miss2.jpg"}
               .caption
-                %span.name 嶋本恭子
-                %p.desc 誕生日 : 1997/10/14
+                %i.winner.fa.fa-trophy{aria-hidden: "true"}
+                %span.name 西田莉那
+                %p 2015年 ミス東工大
+                %p.desc 誕生日 : 1994/11/14
                 %p.desc 趣味 : 寝ること
-                %p.desc 身長 : 160cm
+                %p.desc 身長 : 161cm
                 %p.desc 一言 : 頑張ってたくさん寝ます!
           .col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-0
             .thumbnail
@@ -237,5 +242,28 @@
           .col-lg-8.col-lg-offset-2
             %h1 エントリー
         .row
-          .ggform
-            %iframe{frameborder: "0", height: "1000", marginheight: "0", marginwidth: "0", src: "https://docs.google.com/forms/d/e/1FAIpQLSetJ8sikuBHAg0CVSuBkefhVUm1pDK0An3uoyF5bip8s6NCCA/viewform?embedded=true", width: "760"} 読み込んでいます...
+          %p
+            %a{href: "https://goo.gl/forms/pY9ccrYLrWMEeze13"}こちら
+            のフォームよりご応募ください。
+    %section#clubs.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 運営団体
+        .row
+          .col-md-4.col-sm-6.col-lg-4.col-lg-offset-2.card-parent
+            .card
+              %h2
+                東工大メディア研究会
+              %img{src: "./assets/images/TITAMAS.svg"}
+              %p 「東工大からもっとポップなカルチャーを。」というスローガンを元に活動している。活動内容はハッカソン出場、イベント企画、映像制作等多岐に渡る。入部希望の方はメールアドレス(media.lab.titech@gmail.com)または問い合わせフォームよりご連絡ください。
+          .col-md-4.col-sm-6.col-lg-4.card-parent
+            .card
+              %h2
+                工大祭実行委員会(JIZI)
+              %img{src: "./assets/images/JIZI.svg"}
+              %p 毎年10月に大岡山キャンパスで開催される東工大の学園祭、それが「工大祭」です。工大祭実行員は工大祭の運営を円滑に行うべく活動しています。たくさんの仲間たちと協力して年に一度行われる工大祭を作り上げていく、そんな充実した時間を過ごせるのが工大祭実行委員会の魅力です。
+
+   %footer.footer
+     .container
+       %p.text-muted © TITAMAS All rights reserved

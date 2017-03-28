@@ -206,7 +206,7 @@ footer {
     margin: 0 5px 30px 5px; }
   @media screen and (min-width: 998px) {
     #clubs .card {
-      height: 580px; } }
+      height: 600px; } }
   @media screen and (max-width: 998px) {
     #clubs .card {
       height: 600px; } }

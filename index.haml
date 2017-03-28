@@ -2,14 +2,16 @@
 %html
   %head{lang: "ja"}
     %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}
     %script{type: "text/javascript", src: "./assets/js/jquery-3.2.0.min.js"}
     %script{type: "text/javascript", src: "./assets/js/bootstrap.min.js"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/bootstrap.min.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/font.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/css/main.css"}
     %link{rel: "stylesheet", type: "text/css", href: "./assets/font-awesome/css/font-awesome.min.css"}
+    %link{href: "https://fonts.googleapis.com/css?family=Courgette", rel: "stylesheet"}
   %body
-    %nav.navbar.navbar-default
+    %nav.navbar.navbar-default.navbar-fixed-top
       .container-fluid.navbar-position
         .navbar-header
           %button.navbar-toggle.collapsed{aria-expanded: "false", data-target: "#bs-example-navbar-collapse-1", data-toggle: "collapse", type: "button"}
@@ -17,11 +19,13 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: "#"} 東工大ミスコンテスト
+          %a.navbar-brand{href: "#"} TokyoTech Miss Contest
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{href: "#results"} 前年度の結果
+              %a{href: "#info"} ミス東工大とは?
+            %li
+              %a{href: "#results"} 昨年度出場者
             %li
               %a{href: "#outline"} 企画情報
             %li
@@ -30,11 +34,70 @@
               %a{href: "#qna"} Q&A
     %section#intro
       %img.headerImage{src: "./assets/images/header.jpeg"}
-    %setion#results.text-center
+    %section#info.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            %h1 前年度の結果
+            %h1 ミス東工大とは?
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %p ミス東工大も今年で三年目となります。
+            %p 男女比9:1という環境の中にいる、
+            %p 素敵な貴女達が100%輝ける最高の舞台をご用意する。
+            %p それがミス東工大です。
+    %section#outline.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 企画情報
+      .container
+        .row
+          .col-md-4.col-sm-6.col-lg-3.card-parent
+            .card
+              %h2
+                %i.icon.fa.fa-calendar
+                開催日時
+              %h3 ミスター美少女コンテスト
+              %p 10月8日(土) 13:00～14:00
+              %h3 ミス東工大コンテスト
+              %p 10月9日(日) 12:00～13:00
+              %h3 グランプリ発表
+              %p 10月9日(日) 16:00～16:50
+          .col-md-4.col-sm-6.col-lg-3.card-parent
+            .card
+              %h2
+                %i.icon.fa.fa-map-marker
+                開催場所
+              %p 東京工業大学大岡山キャンパス
+              %p 野外ステージ
+              .ggmap
+                %iframe{allowfullscreen: "", frameborder: "0", height: "450", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.0511188122463!2d139.68272340233486!3d35.605030481882956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f88b899cc553%3A0x5d0763367373fca5!2sTokyo+Institute+of+Technology!5e0!3m2!1sen!2sjp!4v1490632627487", style: "border:0", width: "600"}
+          .clearfix.visible-sm-block
+          .col-md-4.col-sm-6.col-lg-3.card-parent
+            .card
+              %h2
+                %i.icon.fa.fa-thumbs-up
+                投票方法
+              %h3 ミスター美少女コンテスト
+              %p こちらより投票が可能です
+              %h3 ミス東工大コンテスト
+              %p こちらより投票が可能です
+          .clearfix.visible-md-block
+          .col-md-4.col-sm-6.col-lg-3.card-parent
+            .card
+              %h2
+                %i.icon.fa.fa-exclamation-triangle
+                注意事項
+              %ul
+                %li 雨天時は体育館で行います
+                %li 東京工業大学に在籍する学生のみエントリー可能です
+                %li 投票は1人1票までとさせていただきます
+    %section#results.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 昨年度出場者
       .container
         .row
           .col-sm-6.col-md-4
@@ -65,51 +128,8 @@
                 %p.desc 趣味 : 寝ること
                 %p.desc 身長 : 160cm
                 %p.desc 一言 : 頑張ってたくさん寝ます!
-    %hr
-    %setion#outline.text-center
-      .container
-        .row
-          .col-lg-8.col-lg-offset-2
-            %h1 企画情報
-      .container
-        .row
-          .col-md-4.col-sm-6.col-lg-3.card.card
-            %h2
-              %i.icon.fa.fa-calendar
-              開催日時
-            %h3 ミスター美少女コンテスト
-            %p 10月8日(土) 13:00～14:00
-            %h3 ミス東工大コンテスト
-            %p 10月9日(日) 12:00～13:00
-            %h3 グランプリ発表
-            %p 10月9日(日) 16:00～16:50
-          .col-md-4.col-sm-6.col-lg-3.card
-            %h2
-              %i.icon.fa.fa-map-marker
-              開催場所
-            %p 東京工業大学大岡山キャンパス
-            %p 野外ステージ
-            .ggmap
-              %iframe{allowfullscreen: "", frameborder: "0", height: "450", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.0511188122463!2d139.68272340233486!3d35.605030481882956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f88b899cc553%3A0x5d0763367373fca5!2sTokyo+Institute+of+Technology!5e0!3m2!1sen!2sjp!4v1490632627487", style: "border:0", width: "600"}
-          .clearfix.visible-sm-block
-          .col-md-4.col-sm-6.col-lg-3.card
-            %h2
-              %i.icon.fa.fa-thumbs-up
-              投票方法
-            %h3 ミスター美少女コンテスト
-            %p こちらより投票が可能です
-            %h3 ミス東工大コンテスト
-            %p こちらより投票が可能です
-          .clearfix.visible-md-block
-          .col-md-4.col-sm-6.col-lg-3.card
-            %h2
-              %i.icon.fa.fa-exclamation-triangle
-              注意事項
-            %ul
-              %li 雨天時は体育館で行います
-              %li 東京工業大学に在籍する学生のみエントリー可能です
-    %hr
-    %setion#schedule.text-center
+
+    %section#schedule.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
@@ -120,6 +140,7 @@
                   .schedule-item-date
                     %h3.start 7月1日〜
                     %h3.end 9月11日
+                  .clearfix.visible-xs-block
                   .schedule-item-content
                     %h2 エントリー期間
               %i.icon.fa.fa-caret-down
@@ -128,6 +149,7 @@
                   .schedule-item-date
                     %h3.start 7月1日〜
                     %h3.end 9月11日
+                  .clearfix.visible-xs-block
                   .schedule-item-content
                     %h2 審査期間
               %i.icon.fa.fa-caret-down
@@ -136,6 +158,7 @@
                   .schedule-item-date
                     %h3.start 7月1日〜
                     %h3.end 9月11日
+                  .clearfix.visible-xs-block
                   .schedule-item-content
                     %h2 学内投票
               %i.icon.fa.fa-caret-down
@@ -144,28 +167,35 @@
                   .schedule-item-date
                     %h3.start 7月1日〜
                     %h3.end 9月11日
+                  .clearfix.visible-xs-block
                   .schedule-item-content
                     %h2 グランプリ決定
-    %hr
-    %setion#qna.text-center
+    %section#detail.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2
             %h1 Q&A
+    %section#qna.text-center
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            %h1 Q&A
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
             .question
-              %h3 Q. 未経験でも参加可能ですか？
-              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+              %h3.q Q. 未経験でも参加可能ですか？
+              %h3 A. はい、参加可能です。すべて私達がサポートします
             .question
-              %h3 Q. 未経験でも参加可能ですか？
-              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+              %h3.q Q. 未経験でも参加可能ですか？
+              %h3 A. はい、参加可能です。すべて私達がサポートします
             .question
-              %h3 Q. 未経験でも参加可能ですか？
-              %h3.answer A. はい、参加可能です。すべて私達がサポートします
+              %h3.q Q. 未経験でも参加可能ですか？
+              %h3 A. はい、参加可能です。すべて私達がサポートします
             .question
-              %h3 Q. 未経験でも参加可能ですか？
-              %h3.answer A. はい、参加可能です。すべて私達がサポートします
-    %hr
-    %setion#entry.text-center
+              %h3.q Q. 未経験でも参加可能ですか？
+              %h3 A. はい、参加可能です。すべて私達がサポートします
+    %section#entry.text-center
       .container
         .row
           .col-lg-8.col-lg-offset-2

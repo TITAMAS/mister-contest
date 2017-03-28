@@ -5,7 +5,7 @@
 $main_color: #e18f9b;
 $sub_color: #e5c5ca;
 $main_text_color: #444;
-$sub_text_color: #f5f5f5;
+$sub_text_color: #efefef;
 
 ////////////////////
 ////  General   ////
@@ -42,6 +42,7 @@ p, li {
 
 .navbar {
 	background-color: white;
+	margin-bottom: 0;
 
 	.navbar-brand {
 		font-family: 'Courgette', cursive;
@@ -55,10 +56,6 @@ p, li {
 
 	.navbar-nav a {
 		color: $main_text_color !important;
-
-		&:hover {
-			color: $main_color !important;
-		}
 	}
 }
 
@@ -67,21 +64,30 @@ p, li {
 ////////////////////
 
 #intro {
-	margin-top: 50px;
-
 	.headerImage {
 		width: 100%;
 	}
 }
 
 ////////////////////
-/////   Info    ////
+////   Result   ////
 ////////////////////
 
-#info {
-	padding-bottom: 50px;
-}
+#results {
+	.winner {
+		font-size: 30px;
+		margin-right: 5px;
+		color: goldenrod;
+	}
 
+	.name {
+		font-size: 30px;
+	}
+
+	.desc {
+		margin-bottom: 0;
+	}
+}
 
 ////////////////////
 ///   Outline   ////
@@ -89,7 +95,6 @@ p, li {
 
 #outline {
 	background: $main_color;
-	padding-bottom: 50px;
 
 	.icon {
 		margin-right: 10px;
@@ -99,7 +104,6 @@ p, li {
 	li {
 		text-align: left;
 		line-height: 1.7;
-		font-size: 15px;
 	}
 
 	.ggmap {
@@ -129,45 +133,10 @@ p, li {
 		margin: 0 5px 30px 5px;
 	}
 
-	@media screen and (min-width:998px) {
-		.card {
-		  height: 340px;
-		}
-	}
-
-	@media screen and (max-width:998px) {
-		.card {
-		  height: 380px;
-		}
-	}
-
 	@media screen and (max-width:766px) {
 		.card {
 		  margin: 0 20px 30px 20px;
-			height: auto;
 		}
-	}
-}
-
-////////////////////
-////   Result   ////
-////////////////////
-
-#results {
-	padding-bottom: 50px;
-
-	.winner {
-		font-size: 30px;
-		margin-right: 5px;
-		color: goldenrod;
-	}
-
-	.name {
-		font-size: 30px;
-	}
-
-	.desc {
-		margin-bottom: 0;
 	}
 }
 
@@ -176,12 +145,9 @@ p, li {
 ////////////////////
 
 #schedule {
-	background: $main_color;
-	padding-bottom: 50px;
-
 	.icon {
 		font-size: 50px;
-		color: $sub_text_color;
+		color: $main_color;
 	}
 
 	.schedule-item-date {
@@ -191,6 +157,7 @@ p, li {
 		vertical-align: middle;
 		width: 134px;
 		float: left;
+		margin-left: 30%;
 	}
 
 	.schedule-item-content {
@@ -201,11 +168,6 @@ p, li {
 	@media screen and (max-width:766px) {
 		.schedule-item-content {
 			float: none;
-		}
-
-		.schedule-item-date {
-			float: none;
-			margin: 0 auto;
 		}
 	}
 
@@ -229,7 +191,6 @@ p, li {
 
 #qna {
 	background: $main_color;
-	padding-bottom: 50px;
 
 	.question {
 		margin-bottom: 50px;
@@ -245,8 +206,6 @@ p, li {
 ////////////////////
 
 #entry {
-	padding-bottom: 50px;
-
 	.ggform {
 		position: relative;
 		padding-bottom: 56.25%;

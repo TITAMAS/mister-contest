@@ -21,9 +21,24 @@ a {
 
 footer {
   padding: 10px;
-  margin-top: 5px; }
-  footer p {
+  margin-top: 10px; }
+  footer span {
     font-family: 'Courgette', cursive; }
+  footer .titamas {
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
+    footer .titamas img {
+      height: 60px; }
+
+.btn-default {
+  padding: 10px;
+  background: #e18f9b;
+  border: none;
+  color: white; }
+  .btn-default:hover, .btn-default:active, .btn-default:link, .btn-default:visited {
+    color: white !important;
+    background: #e5c5ca !important; }
 
 .text-center {
   text-align: center; }
@@ -180,6 +195,8 @@ footer {
     text-align: left;
     line-height: 1.7;
     font-size: 15px; }
+  #clubs .jizi {
+    width: 70%; }
   #clubs .card-parent {
     padding: 0; }
   #clubs .card {

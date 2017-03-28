@@ -42,10 +42,33 @@ a {
 
 footer {
 	padding: 10px;
-	margin-top: 5px;
+	margin-top: 10px;
 
-	p {
+	span {
 		font-family: 'Courgette', cursive;
+	}
+
+	.titamas {
+		display: block;
+
+		img {
+		  height: 60px;
+		}
+
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.btn-default {
+	padding: 10px;
+	background: $main_color;
+	border: none;
+	color: white;
+
+	&:hover, &:active, &:link, &:visited {
+		color: white !important;
+		background: $sub_color !important;
 	}
 }
 
@@ -320,6 +343,10 @@ footer {
 		text-align: left;
 		line-height: 1.7;
 		font-size: 15px;
+	}
+
+	.jizi {
+		width: 70%;
 	}
 
 	.card-parent {

@@ -222,17 +222,32 @@ footer {
 		color: $sub_text_color;
 	}
 
+	.winner {
+		font-size: 30px;
+		margin-right: 5px;
+		color: goldenrod;
+	}
+
 	.schedule-item-date {
 		background-color: $sub_color;
-		border-radius: 64px;
+		border-radius: 75px;
 		padding: 20px;
 		vertical-align: middle;
-		width: 134px;
+		width: 150px;
+		height: 150px;
 		float: left;
+
+		.start {
+			margin-top: 25px;
+		}
+
+		.final {
+			margin-top: 45px;
+		}
 	}
 
 	.schedule-item-content {
-		margin-top: 30px;
+		margin-top: 40px;
 		float: left;
 	}
 

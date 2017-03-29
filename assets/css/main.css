@@ -247,6 +247,9 @@ footer {
   border: 1px solid #e18f9b;
   margin: 0 5px 30px 5px; }
 
+#detail .tokki {
+  padding-left: 0; }
+
 @media screen and (min-width: 995px) {
   #detail .card {
     height: 350px;
@@ -259,7 +262,9 @@ footer {
 @media screen and (max-width: 766px) {
   #detail .card {
     margin: 0 20px 30px 20px;
-    height: auto; } }
+    height: auto; }
+  #detail .tokki {
+    padding-left: 15px; } }
 
 #entry {
   padding-bottom: 50px; }

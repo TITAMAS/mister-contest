@@ -1,5 +1,5 @@
 body {
-  font-family: 'migmix-1p'; }
+  font-family: 'anito-std'; }
 
 h1, h2, h3, p, li {
   color: #444; }
@@ -35,7 +35,9 @@ footer {
       height: 60px; }
 
 .btn-default {
-  padding: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 20px;
   background: #e18f9b;
   border: none;
   color: white; }
@@ -55,6 +57,7 @@ footer {
     position: relative;
     margin: 0 auto; }
   .navbar .navbar-nav a {
+    font-size: 13px;
     color: #444 !important; }
     .navbar .navbar-nav a:hover {
       color: #e18f9b !important; }
@@ -66,6 +69,9 @@ footer {
 
 #info {
   padding-bottom: 50px; }
+  @media screen and (max-width: 766px) {
+    #info p {
+      text-align: left; } }
 
 #outline {
   background: #e18f9b;

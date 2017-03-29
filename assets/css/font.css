@@ -1,3 +1,7 @@
 @font-face {
   font-family: 'migmix-1p';
   src: url("../fonts/migmix-2p-regular.ttf") format("truetype"), url("../fonts/migmix-2p-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'anito-std';
+  src: url("../fonts/FOT-AnitoStd-M.otf") format("opentype"), url("../fonts/FOT-AnitoStd-M.woff2") format("woff"); }

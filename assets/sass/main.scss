@@ -102,8 +102,9 @@ footer {
 	}
 
 	.navbar-nav a {
-		font-size: 13px;
+		font-size: 12px;
 		color: $main_text_color !important;
+		padding-left: 5px;
 
 		&:hover {
 			color: $main_color !important;

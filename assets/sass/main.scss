@@ -45,6 +45,17 @@ a {
 	}
 }
 
+.emphasis {
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.15em;
+}
+
+.main-color {
+	color: $main_color;
+}
+
 footer {
 	padding: 10px;
 	margin-top: 10px;
@@ -62,20 +73,6 @@ footer {
 
 		text-align: center;
 		margin: 0 auto;
-	}
-}
-
-.btn-default {
-	margin-top: 10px;
-	padding: 15px;
-	font-size: 20px;
-	background: $main_color;
-	border: none;
-	color: white;
-
-	&:hover, &:active, &:link, &:visited {
-		color: white !important;
-		background: $sub_color !important;
 	}
 }
 
@@ -113,10 +110,19 @@ footer {
 		}
 	}
 
+	li.twitter {
+		margin: 10px 10px 0 10px;
+	}
+
 	@media screen and (max-width: 766px) {
 		.navbar-nav a {
 			font-size: 20px;
 			text-align: center;
+		}
+
+		li iframe {
+			display: block;
+			margin: 0 auto;
 		}
 	}
 }
@@ -139,6 +145,10 @@ footer {
 
 #info {
 	padding-bottom: 50px;
+
+	p {
+		line-height: 1.7;
+	}
 
 	@media screen and (max-width:766px) {
 		p {
@@ -219,6 +229,11 @@ footer {
 ////////////////////
 
 #results {
+	.icon {
+		margin-right: 10px;
+		color: $main_color;
+	}
+
 	.thumbnail img {
 		margin-left: 0;
 		margin-right: 0;
@@ -363,6 +378,10 @@ footer {
 	background: $main_color;
 	padding-bottom: 50px;
 
+	h3 {
+		font-size: 20px;
+	}
+
 	.question {
 		margin-bottom: 50px;
 
@@ -423,6 +442,20 @@ footer {
 
 #entry {
 	padding-bottom: 50px;
+
+	.btn-default {
+		margin-top: 20px;
+		padding: 20px;
+		font-size: 30px;
+		background: $main_color;
+		border: none;
+		color: white;
+
+		&:hover, &:active, &:link, &:visited {
+			color: white !important;
+			background: $sub_color !important;
+		}
+	}
 }
 
 ////////////////////

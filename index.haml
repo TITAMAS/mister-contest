@@ -47,8 +47,10 @@
               %a{href: "#entry"} エントリー
             %li
               %a{href: "#clubs"} 運営団体
-            %li
-              %a.twitter{href: "https://twitter.com/titech_contest", target: "_blank"} 公式Twitter
+            %li.twitter
+              %a.twitter-share-button{data-hashtags: "東工大ミスコン", data-lang: "ja", data-size: "large", href: "https://twitter.com/share"}
+              :javascript
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     %section#intro
       %img.headerImage{src: "./assets/images/header.jpeg"}
     %section#info.text-center
@@ -59,7 +61,10 @@
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            %p ミス東工大コンテストは、今年一番“Sci色兼備“な東工大生を決める、
+            %p
+              ミス東工大コンテストは、今年一番
+              %span.emphasis.main-color “Sci色兼備“
+              な東工大生を決める、
             %p 東工大の文化祭「工大祭」の中でも、最も盛り上がる目玉企画の一つです。
             %p ひょっとすると、今年はあなたの番かもしれません。
             %p 皆様のエントリー、運営一同心よりお待ちしています！
@@ -116,7 +121,7 @@
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            %h1 歴代ミス東工大
+            %h1 歴代ミス東工大 グランプリ受賞者
       .container
         .row
           .col-sm-6.col-md-5.col-md-offset-1
@@ -129,8 +134,10 @@
                 %p.desc 誕生日 : 1995/03/13
                 %p.desc 趣味 : 旅行、ダンス
                 %p.desc 身長 : 162.0cm
-                %p.title 今年度の参加者に一言
-                %p.comment いろいろ可能性に満ち溢れているのイベント、それがミスコンだ！素晴らしい機会をいただけて本当に幸せでした！みんなも是非応募してください！
+                %p.title
+                  %i.icon.fa.fa-bullhorn{aria-hidden: "true"}
+                  今年度の参加者に一言
+                %p.comment いろいろな可能性に満ち溢れたイベント、それがミスコンだ！素晴らしい機会をいただけて本当に幸せでした！みんなも是非応募してください！
           .col-sm-6.col-md-5
             .thumbnail
               %img{src: "./assets/images/miss2.jpg"}
@@ -141,7 +148,9 @@
                 %p.desc 誕生日 : 1994/11/14
                 %p.desc 趣味 : ダンス、お菓子作り
                 %p.desc 身長 : 161cm
-                %p.title 今年度の参加者に一言
+                %p.title
+                  %i.icon.fa.fa-bullhorn{aria-hidden: "true"}
+                  今年度の参加者に一言
                 %p.comment 初めは「自分を可愛く見せなきゃいけない」と思い、恥ずかしく感じるかもしれませんが、「理系女子」とかいう肩書きや「ミスコン=華やか」なんてイメージは気にせず、自分が「面白い！楽しい！」と思ったことを表現できるのが「ミス東工大コンテスト」です！少しでも迷ったら是非頑張ってみてください！途中から、きっとやりがいがあって楽しいと感じるはずです！
     %section#schedule.text-center
       .container
@@ -175,7 +184,7 @@
                     %h3.end 10月6日
                   .clearfix.visible-xs-block
                   .schedule-item-content
-                    %h2 ネット投票
+                    %h2 ネット投票期間
               %i.icon.fa.fa-caret-down
               %ul.list-group
                 %li.list-group-item.clearfix
@@ -246,10 +255,16 @@
               %h3 A. 大丈夫です！ご安心ください！
             .question
               %h3.q Q. サークルに可愛い同期がいるのですが他薦は可能ですか？
-              %h3 A. 本人の同意があれば、他薦でのご応募も可能です。
+              %h3
+                A. 本人の同意があれば、
+                %span.emphasis 他薦
+                でのご応募も可能です。
             .question
               %h3.q Q. スケジュールが心配なのですが、どれくらいの頻度で集まる必要がありますか？
-              %h3 A. 夏休みあたりから週に1回ほどの練習、直前は皆様次第です。その他、企業タイアップイベントなどがございます。
+              %h3
+                A. 夏休みあたりから
+                %span.emphasis 週に1回
+                ほどの練習、直前は皆様次第です。その他、企業タイアップイベントなどがございます。
             .question
               %h3.q Q. 豪華賞品ってなんですか？気になります！
               %h3 A. 受け取るまでのお楽しみです！(笑) ご応募お待ちしています！

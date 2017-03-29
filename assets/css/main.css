@@ -7,6 +7,9 @@ h1, h2, h3, p, li {
 h1 {
   margin: 50px 0 50px 0; }
 
+h2 {
+  font-size: 28px; }
+
 h3 {
   font-size: 20px;
   font-weight: bold; }
@@ -95,7 +98,7 @@ footer {
     margin: 0 5px 30px 5px; }
   @media screen and (min-width: 998px) {
     #outline .card {
-      height: 340px; } }
+      height: 400px; } }
   @media screen and (max-width: 998px) {
     #outline .card {
       height: 380px; } }
@@ -119,12 +122,15 @@ footer {
   background: #e18f9b;
   padding-bottom: 50px; }
   #schedule .icon {
+    vertical-align: middle;
     font-size: 50px;
     color: #f5f5f5; }
   #schedule .winner {
     font-size: 30px;
     margin-right: 5px;
     color: goldenrod; }
+  #schedule .list-group {
+    margin-bottom: 0; }
   #schedule .schedule-item-date {
     background-color: #e5c5ca;
     border-radius: 75px;

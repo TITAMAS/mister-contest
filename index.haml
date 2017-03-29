@@ -57,18 +57,18 @@
             %h1 企画情報
       .container
         .row
-          .col-md-4.col-sm-6.col-lg-3.card-parent
+          .col-md-4.col-sm-6.col-lg-4.card-parent
             .card
               %h2
                 %i.icon.fa.fa-calendar
                 開催日時
-              %h3 ミスター美少女コンテスト
-              %p 10月8日(土) 13:00～14:00
               %h3 ミス東工大コンテスト
-              %p 10月9日(日) 12:00～13:00
+              %p 10月7日(土) or 10月8日(日)
+              %h3 ミスター東工大コンテスト
+              %p 10月7日(土) or 10月8日(日)
               %h3 グランプリ発表
-              %p 10月9日(日) 16:00～16:50
-          .col-md-4.col-sm-6.col-lg-3.card-parent
+              %p 10月8日(日) 15:30〜
+          .col-md-4.col-sm-6.col-lg-4.card-parent
             .card
               %h2
                 %i.icon.fa.fa-map-marker
@@ -78,24 +78,25 @@
               .ggmap
                 %iframe{allowfullscreen: "", frameborder: "0", height: "450", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.0511188122463!2d139.68272340233486!3d35.605030481882956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f88b899cc553%3A0x5d0763367373fca5!2sTokyo+Institute+of+Technology!5e0!3m2!1sen!2sjp!4v1490632627487", style: "border:0", width: "600"}
           .clearfix.visible-sm-block
-          .col-md-4.col-sm-6.col-lg-3.card-parent
-            .card
-              %h2
-                %i.icon.fa.fa-thumbs-up
-                投票方法
-              %h3 ミスター美少女コンテスト
-              %p こちらより投票が可能です
-              %h3 ミス東工大コンテスト
-              %p こちらより投票が可能です
-          .clearfix.visible-md-block
-          .col-md-4.col-sm-6.col-lg-3.card-parent
+          -# .col-md-4.col-sm-6.col-lg-3.card-parent
+          -#   .card
+          -#     %h2
+          -#       %i.icon.fa.fa-thumbs-up
+          -#       投票方法
+          -#     %h3 ミス東工大コンテスト
+          -#     %p ネット投票
+          -#     %h3 ミスター東工大コンテスト
+          -#     %p こちらより投票が可能です
+          -# .clearfix.visible-md-block
+          .col-md-4.col-sm-6.col-lg-4.card-parent
             .card
               %h2
                 %i.icon.fa.fa-exclamation-triangle
                 注意事項
               %ul
-                %li 雨天時は体育館で行います
-                %li 投票は1人1票までとさせていただきます
+                %li 雨天時は体育館で行います。
+                %li 投票は1人1票までとさせていただきます。
+                %li 開催日時は変更になる可能性がございます。
     %section#results.text-center
       .container
         .row
@@ -129,12 +130,13 @@
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            %h1 スケジュール
+            %h1{style: "margin-bottom: 0px;"} スケジュール
+            %p{style: "text-align: center; margin-bottom: 30px; font-size: 13px;"} 予定等は予告なく変更されることがあります。
         .row
               %ul.list-group
                 %li.list-group-item.clearfix
                   .schedule-item-date
-                    %h3.start 03月31日〜
+                    %h3.start 3月31日〜
                     %h3.end 5月28日
                   .clearfix.visible-xs-block
                   .schedule-item-content
@@ -177,27 +179,30 @@
         .row
           .col-md-6.col-sm-12.col-lg-6.card-parent
             .card
-              %h2
-                %i.icon.fa.fa-pencil-square-o
-                参加資格
-              %ul
-                .col-lg-6.col-md-6.col-sm-6
-                  %li 東京工業大学の学生及び院生であること。
-                  %li 戸籍上の性別が女性であること。
-                  %li 本企画所定の選考・リハーサルやイベントに参加できること。
-                  %li 誓約書提出時において、公序良俗に反する経歴を有していないこと。
-                .col-lg-6.col-md-6.col-sm-6
-                  %li 未成年者は保護者の同意を得ていること。
-                  %li 昨年度コンテストに参加された方、応募された方も参加資格の対象に含まれます。
+              .row
+                %h2
+                  %i.icon.fa.fa-pencil-square-o
+                  参加資格
+                %ul
+                  .col-lg-6.col-md-6.col-sm-6
+                    %li 東京工業大学の学生及び院生であること。
+                    %li 戸籍上の性別が女性であること。
+                    %li 本企画所定の選考・リハーサルやイベントに参加できること。
+                    %li 誓約書提出時において、公序良俗に反する経歴を有していないこと。
+                  .col-lg-6.col-md-6.col-sm-6
+                    %li 未成年者は保護者の同意を得ていること。
+                    %li 昨年度コンテストに参加された方、応募された方も参加資格の対象に含まれます。
           .col-md-3.col-sm-6.col-lg-3.card-parent
             .card
-              %h2
-                %i.icon.fa.fa-tasks
-                特記事項
-              %ul
-                %li 参加者には豪華賞品がございます。
-                %li 当日の衣装、メイクについてはこちらで用意する予定です。
-                %li 企画内容は変更となる場合がございます。
+              .row
+                %h2
+                  %i.icon.fa.fa-tasks
+                  特記事項
+                %ul
+                  .col-lg-12.col-md-12.col-sm-12{style: "padding-left: 0;"}
+                    %li 参加者には豪華賞品がございます。
+                    %li 当日の衣装、メイクについてはこちらで用意する予定です。
+                    %li 企画内容は変更となる場合がございます。
           .col-md-3.col-sm-6.col-lg-3.card-parent
             .card
               %h2

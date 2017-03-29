@@ -177,6 +177,8 @@ footer {
 #schedule {
   background: #e18f9b;
   padding-bottom: 50px; }
+  #schedule h3 {
+    font-size: 20px; }
   #schedule .icon {
     vertical-align: middle;
     font-size: 50px;

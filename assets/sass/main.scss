@@ -112,6 +112,13 @@ footer {
 			color: $main_color !important;
 		}
 	}
+
+	@media screen and (max-width: 766px) {
+		.navbar-nav a {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
 }
 
 ////////////////////

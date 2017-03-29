@@ -94,9 +94,11 @@
                 %i.icon.fa.fa-exclamation-triangle
                 注意事項
               %ul
-                %li 雨天時は体育館で行います。
-                %li 投票は1人1票までとさせていただきます。
-                %li 開催日時は変更になる可能性がございます。
+                %li 雨天時は場所が変更となる場合がございます。
+                %li 日時は変更となる可能性がございます。
+                %li ネット投票は1日一票、当日投票は1人一票まで。
+                %li 公開している情報以外のコンテストに関するお問い合わせにはお答えできません。
+                %li 当日投票用紙は当日会場にて配布いたします。
     %section#results.text-center
       .container
         .row
@@ -111,10 +113,11 @@
                 %i.winner.fa.fa-trophy{aria-hidden: "true"}
                 %span.name 劉穎青
                 %p 2016年 ミス東工大
-                %p.desc 誕生日 : 1995/03/11
-                %p.desc 趣味 : 寝ること
-                %p.desc 身長 : 160cm
-                %p.desc 一言 : 頑張ってたくさん寝ます!
+                %p.desc 誕生日 : 1995/03/13
+                %p.desc 趣味 : 旅行、ダンス
+                %p.desc 身長 : 162.0cm
+                %p.title 今年度の参加者に一言
+                %p.comment いろいろ可能性に満ち溢れているのイベント、それがミスコンだ！素晴らしい機会をいただけて本当に幸せでした！みんなも是非応募してください！
           .col-sm-6.col-md-4
             .thumbnail
               %img{src: "./assets/images/miss2.jpg"}
@@ -123,9 +126,10 @@
                 %span.name 西田莉那
                 %p 2015年 ミス東工大
                 %p.desc 誕生日 : 1994/11/14
-                %p.desc 趣味 : 寝ること
+                %p.desc 趣味 : ダンス、お菓子作り
                 %p.desc 身長 : 161cm
-                %p.desc 一言 : 頑張ってたくさん寝ます!
+                %p.title 今年度の参加者に一言
+                %p.comment いろいろ可能性に満ち溢れているのイベント、それがミスコンだ！素晴らしい機会をいただけて本当に幸せでした！みんなも是非応募してください！
     %section#schedule.text-center
       .container
         .row
@@ -174,7 +178,10 @@
         .row
           .col-lg-8.col-lg-offset-2
             %h1{style: "margin-bottom: 0px;"} 募集要項
-            %p.text-muted{style: "text-align: center; margin-bottom: 30px; font-size: 13px;"} 詳細につきましては別紙募集要項をご覧ください。
+            %p.text-muted{style: "text-align: center; margin-bottom: 30px; font-size: 13px;"}
+              詳細につきましては
+              %a{href: "https://drive.google.com/open?id=0B2vRXIQq9xMmTTBNYkZfOGhvTW8", target: "_blank"}別紙募集要項
+              をご覧ください。
       .container
         .row
           .col-md-6.col-sm-12.col-lg-6.card-parent
@@ -209,7 +216,10 @@
                 %i.icon.fa.fa-id-card
                 参加手続き
               %p 下記のエントリーフォームより必要事項をご記入の上、ご応募お願いいたします。
-              %p 応募が完了した時点で参加規約に同意したとみなしますので、ご留意ください。
+              %p
+                応募が完了した時点で
+                %a{href: "https://drive.google.com/open?id=0B2vRXIQq9xMmZVh1TGNlNHpjNVU", target: "_blank"}参加規約
+                に同意したとみなしますので、ご留意ください。
     %section#qna.text-center
       .container
         .row
@@ -237,7 +247,12 @@
             %h1 エントリー
         .row
           %p
-            こちらのフォームよりご応募ください。
+            %a{href: "https://drive.google.com/open?id=0B2vRXIQq9xMmTTBNYkZfOGhvTW8", target: "_blank"}募集要項
+            および
+            %a{href: "https://drive.google.com/open?id=0B2vRXIQq9xMmZVh1TGNlNHpjNVU", target: "_blank"}参加規約
+            を
+            %p よくお読みになった上で、
+            %p 下記のフォームよりご応募ください。
           %a{href: "https://goo.gl/forms/pY9ccrYLrWMEeze13", target: "_blank"}
             %button.btn.btn-default{type: "button"} 応募する
     %section#clubs.text-center
@@ -247,15 +262,17 @@
             %h1 運営団体
             .card
               %h2
-                工大祭実行委員会(JIZI)
+                %a{href: "http://koudaisai.jp/", target: "_blank"}
+                  工大祭実行委員会(JIZI)
               %a{href: "http://koudaisai.jp/", target: "_blank"}
                 %img{src: "./assets/images/JIZI.svg"}
-              %p 毎年10月に大岡山キャンパスで開催される東工大の学園祭、それが「工大祭」です。工大祭実行員は工大祭の運営を円滑に行うべく活動しています。たくさんの仲間たちと協力して年に一度行われる工大祭を作り上げていく、そんな充実した時間を過ごせるのが工大祭実行委員会の魅力です。
+              %p 毎年10月に大岡山キャンパスで開催される東工大の学園祭、それが「工大祭」です。 当日は数多くの模擬店が学内に所狭しと並び、講義室では展示や喫茶、演奏などの企画が行われ、巨大な野外ステージでは東工大の学生によるダンスなどのパフォーマンスが行われます。毎年5万人近くの方にご来場いただき、東工大で最も活気のある2日間となっています。
           .col-md-5.col-sm-6.col-lg-4.card-parent
             %h1 協力団体
             .card
               %h2
-                東工大メディア研究会
+                %a{href: "http://titamas.net", target: "_blank"}
+                  東工大メディア研究会
               %a{href: "http://titamas.net", target: "_blank"}
                 %img{src: "./assets/images/TITAMAS.svg"}
               %p 「東工大からもっとポップなカルチャーを。」というスローガンを元に活動している。活動内容はハッカソン出場、イベント企画、映像制作等多岐に渡る。入部希望の方はメールアドレス(media.lab.titech@gmail.com)または問い合わせフォームよりご連絡ください。

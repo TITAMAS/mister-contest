@@ -19,7 +19,7 @@ p, li {
 
 a {
   color: #e18f9b; }
-  a:hover {
+  a:hover, a:active {
     color: #e5c5ca; }
 
 footer {
@@ -107,6 +107,11 @@ footer {
       margin: 0 20px 30px 20px;
       height: auto; } }
 
+#results .thumbnail img {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; }
+
 #results .winner {
   font-size: 30px;
   margin-right: 5px;
@@ -117,6 +122,15 @@ footer {
 
 #results .desc {
   margin-bottom: 0; }
+
+#results .title {
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+#results .comment {
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px; }
 
 #schedule {
   background: #e18f9b;
@@ -224,7 +238,7 @@ footer {
       height: 630px; } }
   @media screen and (max-width: 998px) {
     #clubs .card {
-      height: 600px; } }
+      height: 660px; } }
   @media screen and (max-width: 766px) {
     #clubs .card {
       margin: 0 20px 30px 20px;

@@ -56,6 +56,8 @@ footer {
   .navbar .navbar-position {
     position: relative;
     margin: 0 auto; }
+  .navbar .navbar-nav .twitter {
+    color: #00aced !important; }
   .navbar .navbar-nav a {
     font-size: 13px;
     color: #444 !important; }

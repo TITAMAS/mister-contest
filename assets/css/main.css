@@ -234,6 +234,9 @@ footer {
     font-size: 15px; }
   #clubs .jizi {
     width: 70%; }
+  #clubs .copyright {
+    font-size: 10px;
+    font-family: 'migmix-1p'; }
   #clubs .card-parent {
     padding: 0; }
   #clubs .card {

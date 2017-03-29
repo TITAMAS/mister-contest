@@ -120,6 +120,27 @@ footer {
   margin-right: 0;
   width: 100%; }
 
+#results .thumbnail {
+  height: auto; }
+
+@media screen and (min-width: 995px) {
+  #results .thumbnail {
+    height: 760px; } }
+
+@media screen and (max-width: 994px) {
+  #results .thumbnail {
+    height: 740px; } }
+
+@media screen and (max-width: 766px) {
+  #results .thumbnail img {
+    margin: 0 auto; }
+  #results .thumbnail {
+    height: auto; } }
+
+@media screen and (min-width: 1200px) {
+  #results .thumbnail {
+    height: 800px; } }
+
 #results .winner {
   font-size: 30px;
   margin-right: 5px;
@@ -246,10 +267,10 @@ footer {
     margin: 0 5px 30px 5px; }
   @media screen and (min-width: 995px) {
     #clubs .card {
-      height: 660px; } }
+      height: 580px; } }
   @media screen and (max-width: 994px) {
     #clubs .card {
-      height: 660px; } }
+      height: 570px; } }
   @media screen and (max-width: 766px) {
     #clubs .card {
       margin: 0 20px 30px 20px;

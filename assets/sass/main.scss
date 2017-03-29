@@ -218,6 +218,38 @@ footer {
 		width: 100%;
 	}
 
+	.thumbnail {
+		height: auto;
+	}
+
+	@media screen and (min-width:995px) {
+		.thumbnail {
+		  height: 760px;
+		}
+	}
+
+	@media screen and (max-width:994px) {
+		.thumbnail {
+		  height: 740px;
+		}
+	}
+
+	@media screen and (max-width:766px) {
+		.thumbnail img {
+			margin: 0 auto;
+		}
+
+		.thumbnail {
+			height: auto;
+		}
+	}
+
+	@media screen and (min-width:1200px) {
+		.thumbnail {
+		  height: 800px;
+		}
+	}
+
 	.winner {
 		font-size: 30px;
 		margin-right: 5px;
@@ -422,13 +454,13 @@ footer {
 
 	@media screen and (min-width:995px) {
 		.card {
-		  height: 660px;
+		  height: 580px;
 		}
 	}
 
 	@media screen and (max-width:994px) {
 		.card {
-		  height: 660px;
+		  height: 570px;
 		}
 	}
 

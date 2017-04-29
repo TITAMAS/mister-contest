@@ -18,9 +18,9 @@ p, li {
   font-size: 18px; }
 
 a {
-  color: #e18f9b; }
+  color: #5492cf; }
   a:hover, a:active {
-    color: #e5c5ca; }
+    color: #8fb8e0; }
 
 .emphasis {
   font-weight: bold;
@@ -29,7 +29,7 @@ a {
   font-size: 1.15em; }
 
 .main-color {
-  color: #e18f9b; }
+  color: #5492cf; }
 
 footer {
   padding: 10px;
@@ -49,8 +49,8 @@ footer {
 .navbar {
   background-color: white; }
   .navbar .navbar-brand {
-    font-family: 'Courgette', cursive;
-    color: #e18f9b; }
+    font-family: 'Jorry Raunchy';
+    color: #5492cf; }
   .navbar .navbar-position {
     position: relative;
     margin: 0 auto; }
@@ -61,7 +61,7 @@ footer {
     color: #444 !important;
     padding-left: 5px; }
     .navbar .navbar-nav a:hover {
-      color: #e18f9b !important; }
+      color: #5492cf !important; }
   .navbar li.twitter {
     margin: 10px 10px 0 10px; }
   @media screen and (max-width: 766px) {
@@ -86,11 +86,11 @@ footer {
       text-align: left; } }
 
 #outline {
-  background: #e18f9b;
+  background: #5492cf;
   padding-bottom: 50px; }
   #outline .icon {
     margin-right: 10px;
-    color: #e18f9b; }
+    color: #5492cf; }
   #outline li {
     text-align: left;
     line-height: 1.7;
@@ -127,7 +127,7 @@ footer {
 
 #results .icon {
   margin-right: 10px;
-  color: #e18f9b; }
+  color: #5492cf; }
 
 #results .thumbnail img {
   margin-left: 0;
@@ -176,7 +176,7 @@ footer {
   font-size: 14px; }
 
 #schedule {
-  background: #e18f9b;
+  background: #5492cf;
   padding-bottom: 50px; }
   #schedule h3 {
     font-size: 20px; }
@@ -191,7 +191,7 @@ footer {
   #schedule .list-group {
     margin-bottom: 0; }
   #schedule .schedule-item-date {
-    background-color: #e5c5ca;
+    background-color: #8fb8e0;
     border-radius: 75px;
     padding: 20px;
     vertical-align: middle;
@@ -220,7 +220,7 @@ footer {
       margin-left: 33%; } }
 
 #qna {
-  background: #e18f9b;
+  background: #5492cf;
   padding-bottom: 50px; }
   #qna h3 {
     font-size: 20px; }
@@ -236,7 +236,7 @@ footer {
 
 #detail .icon {
   margin-right: 10px;
-  color: #e18f9b; }
+  color: #5492cf; }
 
 #detail .card-parent {
   padding: 0; }
@@ -244,7 +244,7 @@ footer {
 #detail .card {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #e18f9b;
+  border: 1px solid #5492cf;
   margin: 0 5px 30px 5px; }
 
 #detail .tokki {
@@ -272,15 +272,15 @@ footer {
     margin-top: 20px;
     padding: 20px;
     font-size: 30px;
-    background: #e18f9b;
+    background: #5492cf;
     border: none;
     color: white; }
     #entry .btn-default:hover, #entry .btn-default:active, #entry .btn-default:link, #entry .btn-default:visited {
       color: white !important;
-      background: #e5c5ca !important; }
+      background: #8fb8e0 !important; }
 
 #clubs {
-  background: #e18f9b;
+  background: #5492cf;
   padding-bottom: 50px; }
   #clubs p {
     text-align: left;

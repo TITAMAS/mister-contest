@@ -6,7 +6,7 @@
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}
     %meta{content: "ミスター東工大コンテスト2017X", name: "title"}
     %meta{content: "ミスター東工大コンテスト2017特設サイトです。ミスター東工大コンテストは、今年一番“Sci色兼備“な東工大生を決める、毎年10月に行われる東工大の文化祭「工大祭」の中でも、最も盛り上がる目玉企画の一つです。皆様のエントリー、運営一同心よりお待ちしています！", name: "description"}
-    %meta{content: "ミスコン, 東工大, 2017, 東京工業大学, リケジョ", name: "keywords"}
+    %meta{content: "ミスターコン, 東工大, 2017, 東京工業大学", name: "keywords"}
     %meta{content: "website", property: "og:type"}
     %meta{content: "ミスター東工大コンテスト2017", property: "og:title"}
     %meta{content: "ミスター東工大コンテスト2017特設サイトです。ミスター東工大コンテストは、今年一番“Sci色兼備“な東工大生を決める、毎年10月に行われる東工大の文化祭「工大祭」の中でも、最も盛り上がる目玉企画の一つです。皆様のエントリー、運営一同心よりお待ちしています！", property: "og:description"}
@@ -39,15 +39,13 @@
             %li
               %a{href: "#info"} ミスター東工大とは?
             %li
-              %a{href: "#schedule"} スケジュール
-            %li
               %a{href: "#detail"} 募集要項
             %li
               %a{href: "#qna"} Q&A
             %li
               %a{href: "#entry"} エントリー
             %li.twitter
-              %a.twitter-share-button{data-hashtags: "東工大ミスコン", data-lang: "ja", data-size: "large", href: "https://twitter.com/share"}
+              %a.twitter-share-button{data-hashtags: "東工大ミスターコン", data-lang: "ja", data-size: "large", href: "https://twitter.com/share"}
               :javascript
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     %section#intro
@@ -119,85 +117,6 @@
                 %li ネット投票は1日1票、当日投票は1人1票まで。
                 %li 公開している情報以外のコンテストに関するお問い合わせにはお答えできません。
                 %li 当日投票用紙は当日会場にて配布いたします。
-    %section#results.text-center
-      .container
-        .row
-          .col-lg-8.col-lg-offset-2
-            %h1{style: "margin-bottom: 0px;"} 歴代ミスター東工大
-            %h1{style: "margin-top: 10px;"} グランプリ受賞者
-      .container
-        .row
-          .col-sm-6.col-md-5.col-md-offset-1
-            .thumbnail
-              %img{src: "./assets/images/miss1.jpg"}
-              .caption
-                %i.winner.fa.fa-trophy{aria-hidden: "true"}
-                %span.name 劉穎青
-                %p 2016年 ミスター東工大
-                %p.desc 誕生日 : 1995/03/13
-                %p.desc 趣味 : 旅行、ダンス
-                %p.desc 身長 : 162.0cm
-                %p.title
-                  %i.icon.fa.fa-bullhorn{aria-hidden: "true"}
-                  今年度の参加者に一言
-                %p.comment いろいろな可能性に満ち溢れたイベント、それがミスコンだ！素晴らしい機会をいただけて本当に幸せでした！みんなも是非応募してください！
-          .col-sm-6.col-md-5
-            .thumbnail
-              %img{src: "./assets/images/miss2.jpg"}
-              .caption
-                %i.winner.fa.fa-trophy{aria-hidden: "true"}
-                %span.name 西田莉那
-                %p 2015年 ミスター東工大
-                %p.desc 誕生日 : 1994/11/14
-                %p.desc 趣味 : ダンス、お菓子作り
-                %p.desc 身長 : 161.0cm
-                %p.title
-                  %i.icon.fa.fa-bullhorn{aria-hidden: "true"}
-                  今年度の参加者に一言
-                %p.comment 初めは「自分を可愛く見せなきゃいけない」と思い、恥ずかしく感じるかもしれませんが、「理系女子」とかいう肩書きや「ミスコン=華やか」なんてイメージは気にせず、自分が「面白い！楽しい！」と思ったことを表現できるのが「ミスター東工大コンテスト」です！少しでも迷ったら是非頑張ってみてください！途中から、きっとやりがいがあって楽しいと感じるはずです！
-    %section#schedule.text-center
-      .container
-        .row
-          .col-lg-8.col-lg-offset-2
-            %h1{style: "margin-bottom: 0px;"} スケジュール
-            %p{style: "text-align: center; margin-bottom: 30px; font-size: 13px;"} 予定等は予告なく変更されることがあります。
-        .row
-              %ul.list-group
-                %li.list-group-item.clearfix
-                  .schedule-item-date
-                    %h3.start 3月31日〜
-                    %h3.end 5月28日
-                  .clearfix.visible-xs-block
-                  .schedule-item-content
-                    %h2 エントリー期間
-              %i.icon.fa.fa-caret-down
-              %ul.list-group
-                %li.list-group-item.clearfix
-                  .schedule-item-date
-                    %h3.start 5月29日〜
-                    %h3.end 6月30日
-                  .clearfix.visible-xs-block
-                  .schedule-item-content
-                    %h2 審査期間
-              %i.icon.fa.fa-caret-down
-              %ul.list-group
-                %li.list-group-item.clearfix
-                  .schedule-item-date
-                    %h3.start 9月10日〜
-                    %h3.end 10月6日
-                  .clearfix.visible-xs-block
-                  .schedule-item-content
-                    %h2 ネット投票期間
-              %i.icon.fa.fa-caret-down
-              %ul.list-group
-                %li.list-group-item.clearfix
-                  .schedule-item-date
-                    %h3.final 10月8日
-                  .clearfix.visible-xs-block
-                  .schedule-item-content
-                    %h2
-                      %i.winner.fa.fa-trophy{aria-hidden: "true"}
-                      グランプリ決定
     %section#detail.text-center
       .container
         .row
@@ -218,7 +137,7 @@
                 %ul
                   .col-lg-6.col-md-6.col-sm-6
                     %li 東京工業大学の学生及び院生であること。
-                    %li 戸籍上の性別が女性であること。
+                    %li 戸籍上の性別が男性であること。
                     %li 本企画所定の選考・リハーサルやイベントに参加できること。
                     %li 誓約書提出時において、公序良俗に反する経歴を有していないこと。
                   .col-lg-6.col-md-6.col-sm-6
@@ -233,7 +152,7 @@
                 %ul
                   .col-lg-12.col-md-12.col-sm-12.tokki
                     %li 参加者には豪華賞品がございます。
-                    %li 当日の衣装、メイクについてはこちらで用意する予定です。
+                    %li 当日の衣装についてはこちらで用意する予定です。
                     %li 企画内容は変更となる場合がございます。
           .col-md-3.col-sm-6.col-lg-3.card-parent
             .card
@@ -253,24 +172,30 @@
       .container
         .row
           .col-lg-8.col-lg-offset-2
-            .question
-              %h3.q Q. こういったイベントに参加したことがないのですが大丈夫ですか？
-              %h3 A. 大丈夫です！ご安心ください！運営がサポートさせていただきます！
-            .question
-              %h3.q Q. サークルに可愛い同期がいるのですが他薦は可能ですか？
-              %h3
-                A. 本人の同意があれば、
-                %span.emphasis 他薦
-                でのご応募も可能です。
-            .question
-              %h3.q Q. スケジュールが心配なのですが、どれくらいの頻度で集まる必要がありますか？
-              %h3
-                A. 7月あたりから
-                %span.emphasis 週に1回
-                程度の練習、直前は皆様次第です。その他、企業タイアップイベントなどがございます。
-            .question
-              %h3.q Q. 豪華賞品ってなんですか？気になります！
-              %h3 A. 受け取るまでのお楽しみです！ご応募お待ちしています！
+            .question.row
+              .col-sm-3
+                %img.jizi-member{src: "./assets/images/jizi1.png"}
+              .col-sm-9
+                %h3.q Q. どうしてMr.美少女じゃなくてミスターやるの？
+                %h3.a A. かわいい子を見ていても楽しいですが、イケメンを見ていても楽しいはずなんです。ついでに、東工大かっこいい！入りたい！ってなる高校生が増えてくれたりしたら嬉しいです♪
+            .question.row
+              .col-sm-3
+                %img.jizi-member{src: "./assets/images/jizi2.png"}
+              .col-sm-9
+                %h3.q Q. 出るとどんなメリットがあるの？
+                %h3.a A. あなたの青春が2ページほど増量するかと思います☆
+            .question.row
+              .col-sm-3
+                %img.jizi-member{src: "./assets/images/jizi3.png"}
+              .col-sm-9
+                %h3.q Q. 他薦はあり？
+                %h3.a A. 本人の同意があれば全然問題ないです！！！しかし、選考会には本人が来ていただく必要がございます。
+            .question.row
+              .col-sm-3
+                %img.jizi-member{src: "./assets/images/jizi4.png"}
+              .col-sm-9
+                %h3.q Q. 本番までにやることはあるの？
+                %h3.a A. 練習、リハーサルを主に夏休みに行います！1つの舞台を、出し物を、一緒に完成させましょう！主役は貴方達です！！
     %section#entry.text-center
       .container
         .row
@@ -284,7 +209,7 @@
             を
             %p よくお読みになった上で、
             %p contest@koudaisai.jp 宛に
-            %p 件名: ミスコン2017応募
+            %p 件名: ミスターコン2017応募
             %p 氏名(ふりがな)
             %p 所属(類、学科、専攻など)
             %p 学籍番号
